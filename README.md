@@ -39,7 +39,7 @@ Resultados
 
 
 
- ###Explicación "proyectoucamp"
+ ##Explicación "proyectoucamp"
 
  Este código se divide en dos partes principales: preprocesamiento de imágenes y una interfaz gráfica de usuario (GUI) para la predicción de neumonía en radiografías de tórax.
 
