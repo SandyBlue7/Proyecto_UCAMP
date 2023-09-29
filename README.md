@@ -27,15 +27,15 @@ Donde el segundo resultó con un mejor accuracy, a continuación se explica cada
 Durante el EDA se observó una marcada discrepancia en el tamaño de las clases entre las imágenes etiquetadas como "NORMAL" y "PNEUMONIA". En particular, se identificó que la clase "NORMAL" tenía un número significativamente menor de muestras en comparación con la clase "PNEUMONIA". Esta disparidad planteó una pregunta fundamental sobre si la distribución desigual de las clases podría influir en el rendimiento del modelo de Machine Learning.
 
 
-![](images\dif_clases.png)
+![](dif_clases.png)
 
 Dado el desbalance en el tamaño de las clases, se procedió a entrenar un modelo de Machine Learning, específicamente una red neuronal convolucional (CNN), utilizando el conjunto de datos. El objetivo principal era evaluar si el modelo sería capaz de detectar eficazmente la neumonía en las imágenes de rayos X a pesar de la diferencia en la cantidad de muestras entre las clases.
 
 Resultados
  
  Los resultados del modelo revelaron una clara disparidad en el rendimiento entre las clases "NORMAL" y "PNEUMONIA". A pesar de la alta precisión en la clase mayoritaria, el bajo recall en la clase minoritaria plantea preocupaciones sobre la capacidad del modelo para identificar correctamente los casos de "NORMAL". Este desafío podría atribuirse a la desigualdad en el tamaño de las clases en el conjunto de datos.
-![](images\report_class_prueba3.jpg)
-![](images\cm_prueba3.jpg)
+![](report_class_prueba3.jpg)
+![](cm_prueba3.jpg)
 
 
 
@@ -57,16 +57,16 @@ Resultados:
 La matriz de confusión revela que el modelo logró un alto rendimiento en la detección de la clase "NORMAL" y la clase "PNEUMONIA". En la clase "NORMAL", se observaron 126 predicciones correctas y solo 8 falsos positivos, lo que resultó en una alta precisión del 95%. Además, el modelo logró un alto recall del 94% en esta clase, lo que significa que identificó adecuadamente la mayoría de los casos "NORMAL".
 
 En la clase "PNEUMONIA", el modelo alcanzó un rendimiento aún más impresionante, con 382 predicciones correctas y solo 6 falsos negativos. Esto condujo a una precisión del 98% y un recall del 98% en la detección de la "PNEUMONIA".
-![](images\cm_proyectoucamp.jpg)
+![](cm_proyectoucamp.jpg)
 
 
 Reporte de Clasificación:
 El informe de clasificación proporciona una visión general del rendimiento del modelo en ambas clases. Para la clase "NORMAL", el modelo obtuvo una puntuación F1 del 95%, lo que indica un equilibrio sólido entre precisión y recall. En la clase "PNEUMONIA", el modelo logró una puntuación F1 aún más alta del 98%, lo que indica una capacidad excepcional para detectar esta condición.
-![](images\report_class_proyectoucamp.jpg)
+![](report_class_proyectoucamp.jpg)
 
 
 Además, se implementó una interfaz de usuario utilizando Gradio para permitir que los usuarios carguen imágenes de radiografía de tórax y obtengan predicciones instantáneas basadas en el modelo entrenado. Este enfoque interactivo facilita el acceso a la capacidad de detección de neumonía en imágenes médicas, incluso para personas sin experiencia en ciencia de datos e inteligencia artificial.
 
-![](images\gradio.jpg)
+![](gradio.jpg)
 
 Estos resultados sólidos sientan las bases para la implementación exitosa de Gradio como interfaz para la detección de neumonía en imágenes médicas.
