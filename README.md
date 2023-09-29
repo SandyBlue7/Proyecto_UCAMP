@@ -13,7 +13,7 @@ Este dataset presenta un desafío interesante para la detección de neumonía a 
 
 Este proyecto es una contribución al campo de la salud y la inteligencia artificial, con el objetivo de mejorar la detección temprana de enfermedades respiratorias como la neumonía a través de análisis de imágenes médicas.
 
-![](images\doctors.jpg)
+![](doctors.jpg)
 
 
 Para este proyecto se realizaron dos modelos:
